@@ -1,0 +1,156 @@
+footer {
+  background-image: url("../../assets/footer-bg.jpeg") ;
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding: 100px 0;
+
+  @include respond-to(mobile) {
+    padding: 64px 0;
+  }
+
+  @include respond-to(mobile) {
+    padding: 40px 0;
+  }
+
+  .logo {
+    width: 187px;
+    display: block;
+
+    @include respond-to(phone) {
+      width: 128px;
+    }
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  h6 {
+    margin-bottom: 32px;
+  }
+}
+
+.footer-menu {
+  padding: 80px 0 40px;
+  margin-bottom: 48px;
+  border-bottom: 1px solid $border-color;
+
+  .footer-menu-item {
+    padding-bottom: 40px;
+  }
+
+  p, a {
+    color: $color-text-alt;
+  }
+
+  p {
+    margin-bottom: 16px;
+  }
+
+  @include respond-to(mobile) {
+    padding: 48px 0 8px;
+  }
+
+  @include respond-to(phone) {
+    padding: 24px 0 0;
+
+    .footer-menu-item {
+      border-bottom: 1px solid $border-color;
+      padding-bottom: 0;
+
+      &:last-child {
+        border: 0;
+      }
+
+      &:first-child {
+        border-top: 1px solid $border-color;
+      }
+
+      h6 {
+        font-size: 1rem;
+        padding: 16px 0;
+        margin-bottom: 0;
+        position: relative;
+
+        &::after {
+          content: "";
+          width: 12px;
+          height: 12px;
+          background-image: url("../../assets/icons/chevron-down.svg") ;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center center;
+          position: absolute;
+          right: 0;
+          top: 50%;
+          margin-top: -6px;
+        }
+      }
+
+      > div {
+        display: none;
+      }
+
+      &.show {
+        > h6::after {
+          background-image: url("../../assets/icons/chevron-up.svg") ;
+        }
+
+        > div {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.footer-bottom {
+  font-size: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  .footer-bottom-left {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .footer-bottom-right {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 16px;
+  }
+
+  @include respond-to(mobile) {
+    flex-direction: column-reverse;
+
+    .footer-bottom-left,
+    .footer-bottom-right {
+      width: 100%;
+    }
+
+    .footer-bottom-right {
+      justify-content: flex-start;
+      margin-bottom: 48px;
+    }
+  }
+}
+
+.instagram {
+  background-color: #635F5F;
+  width: 24px;
+  height: 24px;
+  display: block;
+  border-radius: 100%;
+  padding: 5px;
+
+  img {
+    width: 14px;
+    height: 14px;
+    display: block;
+  }
+}

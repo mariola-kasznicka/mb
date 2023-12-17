@@ -1,0 +1,123 @@
+*, :before, :after {
+    @extend %box-sizing--border;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+html {
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+}
+
+body {
+    background: $page-body-color;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    font-family: $base-font;
+    font-size: $base-font-size;
+    font-weight: 400;
+    color: $color-text;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    &.no-scroll {
+        height: 100vh;
+        overflow-y: hidden;
+    }
+}
+
+img {
+    border: 0;
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+a {
+    color: $color-link;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+
+    &:hover, &:focus, &:active {
+        text-decoration: underline;
+    }
+}
+
+button {
+    background-color: transparent;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0 0 10px;
+}
+
+h1 {
+    font-size: 2.6rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+h3 {
+    font-size: 2.2rem;
+}
+
+h4 {
+    font-size: 2.0rem;
+}
+
+h5 {
+    font-size: 1.8rem;
+}
+
+h6 {
+    font-size: 1.125rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.hidden-mobile {
+    @include respond-to(mobile) {
+        display: none !important;
+    }
+}
+
+.hidden-phone {
+    @include respond-to(phone) {
+        display: none !important;
+    }
+}
+
+.visible-mobile {
+    display: none;
+    @include respond-to(mobile) {
+        display: block;
+
+        &.flex {
+            display: flex;
+        }
+    }
+}
+
+.visible-phone {
+    display: none;
+    @include respond-to(phone) {
+        display: block;
+        
+        &.flex {
+            display: flex;
+        }
+    }
+}
