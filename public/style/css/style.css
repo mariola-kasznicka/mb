@@ -58,7 +58,7 @@ p { font-size: 1rem; }
 .banner .container { height: 100%; }
 .banner .banner-inner { width: 50%; align-self: center; }
 .banner .banner-title { color: #3E6749; font-weight: 500; letter-spacing: 0.42px; text-transform: uppercase; margin-bottom: 4px; }
-.banner .banner-header { font-family: "Baskerville", sans-serif; font-size: 5rem; font-weight: 400; line-height: 1.2; color: #222020; margin-bottom: 24px; }
+.banner .banner-header { font-size: 5rem; font-weight: 400; line-height: 1.2; margin-bottom: 24px; }
 .banner p { color: #635F5F; font-size: 18px; margin-bottom: 40px; }
 @media (max-width: 1279px) { .banner { background-position: 50% 100%; aspect-ratio: 32 / 25; }
   .banner .banner-inner { width: 65%; }
@@ -72,9 +72,29 @@ p { font-size: 1rem; }
   .banner .banner-header, .banner p { width: 85%; }
   .banner .btn.btn-primary { width: 100%; } }
 
+.products { padding-top: 100px; }
+.products .products-header { color: #635F5F; font-size: 14px; font-weight: 500; letter-spacing: 0.42px; text-transform: uppercase; }
+.products .products-title { font-size: 3.5rem; }
+.products .products-inner { padding-top: 64px; padding-bottom: 120px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; }
+.products .products-inner .card { font-family: "Baskerville", sans-serif; border: 0; text-align: center; }
+.products .products-inner .card .card-text { font-weight: 700; }
+.products .products-inner .card:hover { text-decoration: none; }
+@media (max-width: 1279px) { .products { padding-top: 64px; }
+  .products .products-title { font-size: 2.5rem; }
+  .products .products-inner { padding-top: 40px; padding-bottom: 64px; gap: 24px; } }
+@media (max-width: 767px) { .products { padding-top: 48px; }
+  .products .products-header { font-size: 12px; margin-bottom: 4px; }
+  .products .products-title { font-size: 2rem; }
+  .products .products-inner { padding-bottom: 48px; } }
+
 h1, h2, h3, h4, h5, h6 { font-weight: 400; }
 
+h1, h2 { font-family: "Baskerville", sans-serif; }
+
 h6 { font-size: 1.125rem; }
+
+.link { font-family: "Baskerville", sans-serif; font-size: 1.125rem; color: #222020; letter-spacing: 0.54px; text-transform: uppercase; text-decoration: underline; }
+@media (max-width: 1279px) { .link { font-size: 1rem; } }
 
 nav.navbar { padding: 40px 0; }
 nav.navbar .logo { width: 187px; display: block; }

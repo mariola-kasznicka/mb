@@ -2,6 +2,23 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
+h1, h2 {
+  font-family: $secondary-font;
+}
+
 h6 {
   font-size: 1.125rem;
+}
+
+.link {
+  font-family: $secondary-font;
+  font-size: 1.125rem;
+  color: $color-text;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+  text-decoration: underline;
+
+  @include respond-to(mobile) {
+    font-size: 1rem;
+  }
 }
