@@ -49,6 +49,29 @@ p { font-size: 1rem; }
 .dropdown-toggle::after { width: 12px; height: 12px; display: inline-block; margin-left: 0.255em; vertical-align: baseline; border: 0; background-image: url("../../assets/icons/chevron-down.svg"); background-repeat: no-repeat; background-size: cover; background-position: center center; }
 .dropdown-toggle.show::after { background-image: url("../../assets/icons/chevron-up.svg"); }
 
+.btn { font-family: "Baskerville", sans-serif; font-style: normal; font-weight: 400; line-height: 170%; letter-spacing: 0.54px; text-transform: uppercase; border-radius: 0; }
+.btn.btn-primary { --bs-btn-bg: #3E6749; --bs-btn-border-color: #3E6749; --bs-btn-hover-bg: #0b5ed7; --bs-btn-hover-border-color: #0a58ca; --bs-btn-active-bg: #0a58ca; --bs-btn-active-border-color: #0a53be; --bs-btn-disabled-bg: #3E6749; --bs-btn-disabled-border-color: #3E6749; }
+.btn.btn-lg { --bs-btn-padding-y: 0.75rem; --bs-btn-padding-x: 1.5rem; --bs-btn-font-size: 1.125rem; --bs-btn-border-radius: 0; }
+@media (max-width: 1279px) { .btn.btn-lg { --bs-btn-font-size: 1rem; } }
+
+.banner { background-image: url("../../assets/banner/banner-1.jpeg"); background-position: top right; background-repeat: no-repeat; background-size: cover; aspect-ratio: 72 / 30; }
+.banner .container { height: 100%; }
+.banner .banner-inner { width: 50%; align-self: center; }
+.banner .banner-title { color: #3E6749; font-weight: 500; letter-spacing: 0.42px; text-transform: uppercase; margin-bottom: 4px; }
+.banner .banner-header { font-family: "Baskerville", sans-serif; font-size: 5rem; font-weight: 400; line-height: 1.2; color: #222020; margin-bottom: 24px; }
+.banner p { color: #635F5F; font-size: 18px; margin-bottom: 40px; }
+@media (max-width: 1279px) { .banner { background-position: 50% 100%; aspect-ratio: 32 / 25; }
+  .banner .banner-inner { width: 65%; }
+  .banner .banner-header { font-size: 3.5rem; }
+  .banner p { font-size: 1rem; } }
+@media (max-width: 767px) { .banner { background-position: 50% 100%; aspect-ratio: 3 / 4; }
+  .banner .banner-inner { width: 100%; }
+  .banner .banner-title { font-size: 0.75rem; }
+  .banner .banner-header { font-size: 2rem; margin-bottom: 1rem; }
+  .banner p { margin-bottom: 24px; }
+  .banner .banner-header, .banner p { width: 85%; }
+  .banner .btn.btn-primary { width: 100%; } }
+
 h1, h2, h3, h4, h5, h6 { font-weight: 400; }
 
 h6 { font-size: 1.125rem; }
@@ -84,7 +107,7 @@ nav.navbar .navbar-toggler:focus { box-shadow: none; }
   nav.navbar .logo { width: 128px; }
   nav.navbar .navbar-collapse { height: calc(100vh - 86px); top: 86px; padding: 16px; } }
 
-footer { background-image: url("../../assets/footer-bg.jpeg"); background-repeat: no-repeat; background-position: top center; padding: 100px 0; }
+footer { background-image: url("../../assets/footer-bg.jpeg"); background-repeat: no-repeat; background-position: top center; background-size: cover; padding: 100px 0; }
 @media (max-width: 1279px) { footer { padding: 64px 0; } }
 @media (max-width: 1279px) { footer { padding: 40px 0; } }
 footer .logo { width: 187px; display: block; }

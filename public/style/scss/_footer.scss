@@ -2,6 +2,7 @@ footer {
   background-image: url("../../assets/footer-bg.jpeg") ;
   background-repeat: no-repeat;
   background-position: top center;
+  background-size: cover;
   padding: 100px 0;
 
   @include respond-to(mobile) {

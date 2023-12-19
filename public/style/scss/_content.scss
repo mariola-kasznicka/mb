@@ -35,3 +35,124 @@
         background-image: url("../../assets/icons/chevron-up.svg") ;
     }
 }
+
+.btn {
+    font-family: $secondary-font;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+    border-radius: 0;
+
+    &.btn-primary {
+        --bs-btn-bg: #3E6749;
+        --bs-btn-border-color: #3E6749;
+        --bs-btn-hover-bg: #0b5ed7;
+        --bs-btn-hover-border-color: #0a58ca;
+        --bs-btn-active-bg: #0a58ca;
+        --bs-btn-active-border-color: #0a53be;
+        --bs-btn-disabled-bg: #3E6749;
+        --bs-btn-disabled-border-color: #3E6749;
+    }
+
+    &.btn-lg {
+        --bs-btn-padding-y: 0.75rem;
+        --bs-btn-padding-x: 1.5rem;
+        --bs-btn-font-size: 1.125rem;
+        --bs-btn-border-radius: 0;
+    }
+
+    @include respond-to(mobile) {
+        &.btn-lg {
+            --bs-btn-font-size: 1rem;
+        }
+    }
+}
+
+.banner {
+    background-image: url("../../assets/banner/banner-1.jpeg");
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    aspect-ratio: 72 / 30;
+
+    .container {
+        height: 100%;
+    }
+
+    .banner-inner {
+        width: 50%;
+        align-self: center;
+    }
+
+    .banner-title {
+        color: #3E6749;
+        font-weight: 500;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+        margin-bottom: 4px;
+    }
+
+    .banner-header {
+        font-family: $secondary-font;
+        font-size: 5rem;
+        font-weight: 400;
+        line-height: 1.2;
+        color: #222020;
+        margin-bottom: 24px;
+    }
+
+    p {
+        color: #635F5F;
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    @include respond-to(mobile) {
+        background-position: 50% 100%;
+        aspect-ratio: 32 / 25;
+
+        .banner-inner {
+            width: 65%;
+        }
+
+        .banner-header {
+            font-size: 3.5rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+
+    @include respond-to(phone) {
+        background-position: 50% 100%;
+        aspect-ratio: 3 / 4;
+
+        .banner-inner {
+            width: 100%;
+        }
+
+        .banner-title {
+            font-size: 0.75rem;
+        }
+
+        .banner-header {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 24px;
+        }
+
+        .banner-header, p {
+            width: 85%;
+        }
+
+        .btn.btn-primary {
+            width: 100%;
+        }
+    }
+}
