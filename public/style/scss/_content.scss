@@ -171,16 +171,33 @@
     }
 
     .products-inner {
+        width: auto;
         padding-top: 64px;
         padding-bottom: 120px;
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, minmax(300px, 25%));
+        grid-auto-flow: column;
+        overflow-x: auto;
         gap: 32px;
 
         .card {
             font-family: $secondary-font;
             border: 0;
             text-align: center;
+
+            .card-img {
+                width: 100%;
+                aspect-ratio: 1 / 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;
+
+                img {
+                    max-height: 100%;
+                    width: auto;
+                }
+            }
 
             .card-text {
                 font-weight: 700;
@@ -200,6 +217,8 @@
         }
 
         .products-inner {
+            margin-left: -35px;
+            margin-right: -35px;
             padding-top: 40px;
             padding-bottom: 64px;
             gap: 24px;
@@ -219,6 +238,7 @@
         }
 
         .products-inner {
+            grid-template-columns: repeat(4, minmax(240px, 25%));
             padding-bottom: 48px;
         }
     }

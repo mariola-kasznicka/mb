@@ -75,17 +75,19 @@ p { font-size: 1rem; }
 .products { padding-top: 100px; }
 .products .products-header { color: #635F5F; font-size: 14px; font-weight: 500; letter-spacing: 0.42px; text-transform: uppercase; }
 .products .products-title { font-size: 3.5rem; }
-.products .products-inner { padding-top: 64px; padding-bottom: 120px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; }
+.products .products-inner { width: auto; padding-top: 64px; padding-bottom: 120px; display: grid; grid-template-columns: repeat(4, minmax(300px, 25%)); grid-auto-flow: column; overflow-x: auto; gap: 32px; }
 .products .products-inner .card { font-family: "Baskerville", sans-serif; border: 0; text-align: center; }
+.products .products-inner .card .card-img { width: 100%; aspect-ratio: 1 / 1; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.products .products-inner .card .card-img img { max-height: 100%; width: auto; }
 .products .products-inner .card .card-text { font-weight: 700; }
 .products .products-inner .card:hover { text-decoration: none; }
 @media (max-width: 1279px) { .products { padding-top: 64px; }
   .products .products-title { font-size: 2.5rem; }
-  .products .products-inner { padding-top: 40px; padding-bottom: 64px; gap: 24px; } }
+  .products .products-inner { margin-left: -35px; margin-right: -35px; padding-top: 40px; padding-bottom: 64px; gap: 24px; } }
 @media (max-width: 767px) { .products { padding-top: 48px; }
   .products .products-header { font-size: 12px; margin-bottom: 4px; }
   .products .products-title { font-size: 2rem; }
-  .products .products-inner { padding-bottom: 48px; } }
+  .products .products-inner { grid-template-columns: repeat(4, minmax(240px, 25%)); padding-bottom: 48px; } }
 
 h1, h2, h3, h4, h5, h6 { font-weight: 400; }
 
