@@ -99,21 +99,39 @@
     }
 }
 
-.products {
+.section-heading {
     padding-top: 100px;
-
-    .products-header {
+    .section-heading-header {
         color: #635F5F;
         font-size: 14px;
         font-weight: 500;
         letter-spacing: 0.42px;
         text-transform: uppercase;
     }
-
-    .products-title {
+    .section-heading-title {
         font-size: 3.5rem;
     }
 
+    @include respond-to(mobile) {
+        padding-top: 64px;
+        .section-heading-title {
+            font-size: 2.5rem;
+        }
+    }
+
+    @include respond-to(phone) {
+        padding-top: 48px;
+        .section-heading-header {
+            font-size: 12px;
+            margin-bottom: 4px;
+        }
+        .section-heading-title {
+            font-size: 2rem;
+        }
+    }
+}
+
+.products {
     .products-inner {
         width: auto;
         padding-top: 64px;
@@ -154,12 +172,6 @@
     }
 
     @include respond-to(mobile) {
-        padding-top: 64px;
-
-        .products-title {
-            font-size: 2.5rem;
-        }
-
         .products-inner {
             margin-left: -35px;
             margin-right: -35px;
@@ -170,17 +182,6 @@
     }
 
     @include respond-to(phone) {
-        padding-top: 48px;
-
-        .products-header {
-            font-size: 12px;
-            margin-bottom: 4px;
-        }
-
-        .products-title {
-            font-size: 2rem;
-        }
-
         .products-inner {
             grid-template-columns: repeat(4, minmax(240px, 25%));
             padding-bottom: 48px;
@@ -236,5 +237,44 @@
 
     &--necklace {
         background-image: url("../../assets/bg-necklace.png");
+    }
+}
+
+.about {
+    display: flex;
+    gap: 32px;
+    padding: 100px 0 60px;
+
+    img {
+        margin-bottom: 32px;
+    }
+
+    p {
+        color: $color-text-alt;
+    }
+
+    .about-col {
+        width: 25%;
+    }
+}
+
+.blog {
+    display: flex;
+    gap: 32px;
+    padding: 100px 0 40px;
+
+    .blog-img {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 32px;
+    }
+
+    p {
+        color: $color-text-alt;
+    }
+
+
+    .blog-col {
+        width: 33.3333%;
     }
 }
