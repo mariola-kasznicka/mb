@@ -109,7 +109,7 @@ p { font-size: 1rem; }
 @media (max-width: 767px) { .products .products-inner { margin-left: -15px; margin-right: -15px; grid-template-columns: repeat(4, minmax(240px, 25%)); padding-bottom: 48px; } }
 
 .grid-wrapper { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; }
-.grid-wrapper .grid-wrapper-link { background-size: cover; font-size: 2rem; font-family: "Baskerville", sans-serif; text-decoration: none; padding: 32px 16px; aspect-ratio: 1 / 1; }
+.grid-wrapper .grid-wrapper-link { background-position: center; background-size: cover; font-size: 2rem; font-family: "Baskerville", sans-serif; text-decoration: none; padding: 32px 16px; aspect-ratio: 1 / 1; }
 .grid-wrapper .grid-wrapper-link:hover { text-decoration: none; }
 .grid-wrapper .grid-wrapper-link:nth-child(2) { grid-column: 3; grid-row: 2; }
 .grid-wrapper .grid-wrapper-link:nth-child(5) { font-size: 4rem; padding: 40px; grid-column: 1 / 3; grid-row: 1 / 3; }
@@ -122,12 +122,12 @@ p { font-size: 1rem; }
   .grid-wrapper .grid-wrapper-link { padding: 24px 16px; aspect-ratio: 22 / 31; }
   .grid-wrapper .grid-wrapper-link:nth-child(2) { grid-column: 1; grid-row: 2; }
   .grid-wrapper .grid-wrapper-link:nth-child(3) { grid-column: 2; grid-row: 2; }
-  .grid-wrapper .grid-wrapper-link:nth-child(5) { grid-column: 1 / 3; grid-row: 1 / 3; aspect-ratio: 47 / 31; } }
+  .grid-wrapper .grid-wrapper-link:nth-child(5) { grid-column: 1 / 3; grid-row: 1 / 3; aspect-ratio: 47 / 31; font-size: 3.5rem; } }
 @media (max-width: 767px) { .grid-wrapper { grid-template-columns: repeat(1, 1fr); }
   .grid-wrapper .grid-wrapper-link { aspect-ratio: 17 / 11; }
   .grid-wrapper .grid-wrapper-link:nth-child(2) { grid-column: 1; grid-row: 2; }
   .grid-wrapper .grid-wrapper-link:nth-child(3) { grid-column: 1; grid-row: 3; }
-  .grid-wrapper .grid-wrapper-link:nth-child(5) { grid-column: 1 / 1; grid-row: 1 / 1; aspect-ratio: 34 / 43; } }
+  .grid-wrapper .grid-wrapper-link:nth-child(5) { padding: 24px 16px; grid-column: 1 / 1; grid-row: 1 / 1; aspect-ratio: 34 / 43; } }
 
 .about { display: flex; gap: 32px; padding: 28px 0 60px; }
 .about img { margin-bottom: 32px; }
