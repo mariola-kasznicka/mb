@@ -16,7 +16,7 @@
     }
 
     &.banner-newsletter {
-        background-image: url("../../assets/bg-newsletter.png");
+        background-image: url("../../assets/bg-newsletter.jpg");
     }
 
     .container {
@@ -260,19 +260,19 @@
     }
 
     &--ring {
-        background-image: url("../../assets/bg-ring.png");
+        background-image: url("../../assets/bg-ring.jpg");
     }
 
     &--bracelet {
-        background-image: url("../../assets/bg-bracelet.png");
+        background-image: url("../../assets/bg-bracelet.jpg");
     }
 
     &--earring {
-        background-image: url("../../assets/bg-earring.png");
+        background-image: url("../../assets/bg-earring.jpg");
     }
 
     &--necklace {
-        background-image: url("../../assets/bg-necklace.png");
+        background-image: url("../../assets/bg-necklace.jpg");
     }
 
     @include respond-to(mobile) {
@@ -355,6 +355,7 @@
         gap: 0;
         .about-col {
             width: 100%;
+            padding-bottom: 48px;
         }
     }
 }
