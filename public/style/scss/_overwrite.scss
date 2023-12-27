@@ -1,5 +1,5 @@
 .container {
-    width: 100%;
+    width: 95%;
     max-width: 1440px;
     margin: 0 auto;
     padding: 0;
@@ -45,13 +45,17 @@
     text-transform: uppercase;
     border-radius: 0;
 
+    &:hover, &:active, &:focus {
+        text-decoration: none;
+    }
+
     &.btn-primary {
         --bs-btn-bg: #3E6749;
         --bs-btn-border-color: #3E6749;
-        --bs-btn-hover-bg: #0b5ed7;
-        --bs-btn-hover-border-color: #0a58ca;
-        --bs-btn-active-bg: #0a58ca;
-        --bs-btn-active-border-color: #0a53be;
+        --bs-btn-hover-bg: #50865F;
+        --bs-btn-hover-border-color: #50865F;
+        --bs-btn-active-bg: #50865F;
+        --bs-btn-active-border-color: #50865F;
         --bs-btn-disabled-bg: #3E6749;
         --bs-btn-disabled-border-color: #3E6749;
     }
@@ -59,18 +63,43 @@
     &.btn-secondary {
         --bs-btn-bg: #679992;
         --bs-btn-border-color: #679992;
-        --bs-btn-hover-bg: #5c636a;
-        --bs-btn-hover-border-color: #565e64;
-        --bs-btn-active-bg: #565e64;
-        --bs-btn-active-border-color: #51585e;
+        --bs-btn-hover-bg: #85ADA7;
+        --bs-btn-hover-border-color: #85ADA7;
+        --bs-btn-active-bg: #85ADA7;
+        --bs-btn-active-border-color: #85ADA7;
         --bs-btn-disabled-bg: #679992;
         --bs-btn-disabled-border-color: #679992;
+    }
+
+    &.btn-info {
+        --bs-btn-bg: #E3C1C2;
+        --bs-btn-border-color: #E3C1C2;
+        --bs-btn-hover-bg: #EAD1D2;
+        --bs-btn-hover-border-color: #EAD1D2;
+        --bs-btn-active-bg: #EAD1D2;
+        --bs-btn-active-border-color: #EAD1D2;
+        --bs-btn-disabled-bg: #E3C1C2;
+        --bs-btn-disabled-border-color: #E3C1C2;
     }
 
     &.btn-lg {
         --bs-btn-padding-y: 0.75rem;
         --bs-btn-padding-x: 1.5rem;
         --bs-btn-font-size: 1.125rem;
+        --bs-btn-border-radius: 0;
+    }
+
+    &.btn-md {
+        --bs-btn-padding-y: 0.75rem;
+        --bs-btn-padding-x: 1.5rem;
+        --bs-btn-font-size: 1rem;
+        --bs-btn-border-radius: 0;
+    }
+
+    &.btn-sm {
+        --bs-btn-padding-y: 0.75rem;
+        --bs-btn-padding-x: 1.5rem;
+        --bs-btn-font-size: 1rem;
         --bs-btn-border-radius: 0;
     }
 

@@ -76,6 +76,10 @@
             width: 100%;
         }
 
+        .banner-outer {
+            padding: 0 16px;
+        }
+
         .banner-title {
             font-size: 0.75rem;
         }
@@ -101,6 +105,7 @@
 
 .section-heading {
     padding-top: 100px;
+    padding-bottom: 64px;
     .section-heading-header {
         color: #635F5F;
         font-size: 14px;
@@ -114,6 +119,7 @@
 
     @include respond-to(mobile) {
         padding-top: 64px;
+        padding-bottom: 40px;
         .section-heading-title {
             font-size: 2.5rem;
         }
@@ -134,10 +140,9 @@
 .products {
     .products-inner {
         width: auto;
-        padding-top: 64px;
         padding-bottom: 120px;
         display: grid;
-        grid-template-columns: repeat(4, minmax(300px, 25%));
+        grid-template-columns: repeat(4, minmax(270px, 25%));
         grid-auto-flow: column;
         overflow-x: auto;
         gap: 32px;
@@ -175,7 +180,6 @@
         .products-inner {
             margin-left: -35px;
             margin-right: -35px;
-            padding-top: 40px;
             padding-bottom: 64px;
             gap: 24px;
         }
@@ -183,6 +187,8 @@
 
     @include respond-to(phone) {
         .products-inner {
+            margin-left: -15px;
+            margin-right: -15px;
             grid-template-columns: repeat(4, minmax(240px, 25%));
             padding-bottom: 48px;
         }
@@ -238,12 +244,60 @@
     &--necklace {
         background-image: url("../../assets/bg-necklace.png");
     }
+
+    @include respond-to(mobile) {
+        grid-template-columns: repeat(3, 1fr);
+        .grid-wrapper-link {
+            padding: 24px 16px;
+            aspect-ratio: 22 / 31;
+
+            &:nth-child(2) {
+                grid-column: 1;
+                grid-row: 2;
+            }
+
+            &:nth-child(3) {
+                grid-column: 2;
+                grid-row: 2;
+            }
+
+            &:nth-child(5) {
+                grid-column: 1 / 3;
+                grid-row: 1 / 3;
+                aspect-ratio: 47 / 31;
+            }
+        }
+    }
+
+    @include respond-to(phone) {
+        grid-template-columns: repeat(1, 1fr);
+
+        .grid-wrapper-link {
+            aspect-ratio: 17 / 11;
+
+            &:nth-child(2) {
+                grid-column: 1;
+                grid-row: 2;
+            }
+
+            &:nth-child(3) {
+                grid-column: 1;
+                grid-row: 3;
+            }
+
+            &:nth-child(5) {
+                grid-column: 1 / 1;
+                grid-row: 1 / 1;
+                aspect-ratio: 34 / 43;
+            }
+        }
+    }
 }
 
 .about {
     display: flex;
     gap: 32px;
-    padding: 100px 0 60px;
+    padding: 28px 0 60px;
 
     img {
         margin-bottom: 32px;
@@ -256,12 +310,29 @@
     .about-col {
         width: 25%;
     }
+
+    @include respond-to(mobile) {
+        flex-wrap: wrap;
+        padding-bottom: 16px;
+        .about-col {
+            width: calc(50% - 16px);
+        }
+    }
+
+    @include respond-to(phone) {
+        padding-top: 0;
+        padding-bottom: 0;
+        gap: 0;
+        .about-col {
+            width: 100%;
+        }
+    }
 }
 
 .blog {
     display: flex;
     gap: 32px;
-    padding: 100px 0 40px;
+    padding: 28px 0 40px;
 
     .blog-img {
         width: 100%;
@@ -276,5 +347,24 @@
 
     .blog-col {
         width: 33.3333%;
+    }
+
+    @include respond-to(mobile) {
+        margin: 0 -35px;
+        padding: 0 35px;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(270px, 33.33%));
+        grid-auto-flow: column;
+        overflow-x: auto;
+        gap: 24px;
+
+        .blog-col {
+            width: 100%;
+        }
+    }
+
+    @include respond-to(phone) {
+        margin: 0 -15px;
+        padding: 0 15px;
     }
 }
