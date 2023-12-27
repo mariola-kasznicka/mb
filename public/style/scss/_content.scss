@@ -301,7 +301,7 @@
         }
     }
 
-    @include respond-to(phone) {
+    @include respond-to(phone-xs) {
         grid-template-columns: repeat(1, 1fr);
 
         .grid-wrapper-link {

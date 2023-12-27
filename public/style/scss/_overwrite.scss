@@ -103,7 +103,7 @@
         }
     }
 
-    @include respond-to(phone) {
+    @include respond-to(phone-xs) {
         width: 100%;
     }
 }
