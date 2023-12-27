@@ -96,7 +96,7 @@
         }
     }
 
-    @include respond-to(phone) {
+    @include respond-to(phone-xs) {
         background-position: 50% 100%;
         aspect-ratio: 3 / 4;
 

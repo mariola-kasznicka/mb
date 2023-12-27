@@ -81,7 +81,7 @@ p { font-size: 1rem; }
   .banner .banner-header { font-size: 3.5rem; }
   .banner p { font-size: 1rem; }
   .banner.banner-light .banner-inner { width: 70%; } }
-@media (max-width: 767px) { .banner { background-position: 50% 100%; aspect-ratio: 3 / 4; }
+@media (max-width: 709px) { .banner { background-position: 50% 100%; aspect-ratio: 3 / 4; }
   .banner .banner-inner { width: 100%; }
   .banner .banner-outer { padding: 0 16px; }
   .banner .banner-title { font-size: 0.75rem; }
