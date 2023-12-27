@@ -15,6 +15,10 @@
         background-image: url("../../assets/banner/banner-2.jpg");
     }
 
+    &.banner-newsletter {
+        background-image: url("../../assets/bg-newsletter.png");
+    }
+
     .container {
         height: 100%;
     }
@@ -46,17 +50,35 @@
     }
 
     p {
-        color: #635F5F;
+        color: $color-text-alt;
         font-size: 18px;
         margin-bottom: 40px;
+    }
+
+    &.banner-light {
+        .banner-inner {
+            width: 50%;
+        }
+        .banner-title {
+            color: #B69091;
+        }
     }
 
     @include respond-to(mobile) {
         background-position: 50% 100%;
         aspect-ratio: 32 / 25;
 
+        &.banner-content {
+            width: calc(100% + 32px);
+            margin: 0 -16px;
+        }
+
         .banner-inner {
-            width: 65%;
+            width: 75%;
+        }
+
+        .banner-outer {
+            padding: 0 32px;
         }
 
         .banner-header {
@@ -65,6 +87,12 @@
 
         p {
             font-size: 1rem;
+        }
+
+        &.banner-light {
+            .banner-inner {
+                width: 70%;
+            }
         }
     }
 
@@ -97,8 +125,10 @@
             width: 85%;
         }
 
-        .btn.btn-primary {
-            width: 100%;
+        &.banner-light {
+            .banner-inner {
+                width: 100%;
+            }
         }
     }
 }

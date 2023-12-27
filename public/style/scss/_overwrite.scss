@@ -5,12 +5,6 @@
     padding: 0;
 
     @include respond-to(mobile) {
-        width: calc(100% - 70px);
-        max-width: calc(100% - 70px);
-        margin: 0 35px;
-    }
-
-    @include respond-to(phone) {
         width: calc(100% - 32px);
         max-width: calc(100% - 32px);
         margin: 0 16px;
@@ -107,5 +101,19 @@
         &.btn-lg {
             --bs-btn-font-size: 1rem;
         }
+    }
+
+    @include respond-to(mobile) {
+        width: 100%;
+    }
+}
+
+.form-control {
+    border-radius: 0;
+    padding: 16px;
+    height: 60px;
+
+    &.no-border {
+        border-color: #FFF;
     }
 }
