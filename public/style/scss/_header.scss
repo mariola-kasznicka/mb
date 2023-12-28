@@ -31,7 +31,7 @@ nav.navbar {
 
   .navbar-toggler {
     border: 0;
-    padding: 0;
+    padding: 16px 0;
 
     > span {
       background-color: #000;
@@ -83,7 +83,7 @@ nav.navbar {
     }
   }
 
-  @include respond-to(mobile) {
+  @media (max-width: 1199px) {
     padding: 26px 0;
 
     .navbar-icon {

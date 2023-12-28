@@ -163,7 +163,7 @@ nav.navbar .nav-link { font-size: 16px; font-weight: normal; position: relative;
 nav.navbar .navbar-nav { display: flex; gap: 24px; align-items: center; }
 nav.navbar .navbar-icon { display: flex; align-items: center; margin-right: 0; margin-left: 24px; }
 nav.navbar .navbar-icon img { margin-right: 8px; }
-nav.navbar .navbar-toggler { border: 0; padding: 0; }
+nav.navbar .navbar-toggler { border: 0; padding: 16px 0; }
 nav.navbar .navbar-toggler > span { background-color: #000; position: relative; display: block; width: 26px; height: 1px; border-radius: 2px; }
 nav.navbar .navbar-toggler > span:before, nav.navbar .navbar-toggler > span:after { position: absolute; background: #000; content: ''; width: 26px; height: 1px; border-radius: 2px; left: 0; -webkit-transition: 0.5s ease-in-out; -moz-transition: 0.5s ease-in-out; -o-transition: 0.5s ease-in-out; transition: 0.5s ease-in-out; }
 nav.navbar .navbar-toggler > span:before { top: -8px; }
@@ -172,7 +172,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] > span { background-color: tran
 nav.navbar .navbar-toggler[aria-expanded="true"] > span:before { transform: rotate(45deg) translate(5px, 6px); }
 nav.navbar .navbar-toggler[aria-expanded="true"] > span:after { transform: rotate(-45deg) translate(5px, -6px); }
 nav.navbar .navbar-toggler:focus { box-shadow: none; }
-@media (max-width: 1279px) { nav.navbar { padding: 26px 0; }
+@media (max-width: 1199px) { nav.navbar { padding: 26px 0; }
   nav.navbar .navbar-icon > span { display: none; }
   nav.navbar .navbar-nav { gap: 0; }
   nav.navbar .navbar-collapse { position: fixed; width: 100%; height: calc(100vh - 110px); top: 110px; left: 0; overflow-x: auto; background-color: #FFF; z-index: 100; border-top: 1px solid #CDCBCB; padding: 16px 32px; }
