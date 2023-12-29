@@ -194,7 +194,7 @@ nav.navbar .navbar-toggler:focus { box-shadow: none; }
   nav.navbar .navbar-collapse .dropdown .dropdown-menu .dropdown-item { color: #635F5F; padding-left: 0; padding-right: 0; } }
 @media (max-width: 767px) { nav.navbar { padding: 24px 0; }
   nav.navbar .logo { width: 128px; }
-  nav.navbar .navbar-collapse { height: calc(100vh - 86px); top: 86px; padding: 16px; } }
+  nav.navbar .navbar-collapse { height: calc(100vh - 80px); top: 80px; padding: 16px; } }
 
 footer { background-image: url("../../assets/footer-bg.jpeg"); background-repeat: no-repeat; background-position: top center; background-size: cover; padding: 100px 0; }
 @media (max-width: 1279px) { footer { padding: 64px 0; } }
