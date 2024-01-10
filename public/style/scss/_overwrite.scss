@@ -31,6 +31,7 @@
 }
 
 .btn {
+    width: auto !important;
     font-family: $secondary-font;
     font-style: normal;
     font-weight: 400;
@@ -44,67 +45,91 @@
     }
 
     &.btn-primary {
-        --bs-btn-bg: #3E6749;
-        --bs-btn-border-color: #3E6749;
-        --bs-btn-hover-bg: #50865F;
-        --bs-btn-hover-border-color: #50865F;
-        --bs-btn-active-bg: #50865F;
-        --bs-btn-active-border-color: #50865F;
-        --bs-btn-disabled-bg: #3E6749;
-        --bs-btn-disabled-border-color: #3E6749;
+        background-color: #3E6749;
+        border-color: #3E6749;
+
+        &:hover {
+            background-color: #50865F;
+            border-color: #50865F;
+        }
+
+        &:active {
+            background-color: #50865F;
+            border-color: #3E6749;
+        }
+
+        &:disabled {
+            background-color: #3E6749;
+            border-color: #3E6749;
+        }
     }
 
     &.btn-secondary {
-        --bs-btn-bg: #679992;
-        --bs-btn-border-color: #679992;
-        --bs-btn-hover-bg: #85ADA7;
-        --bs-btn-hover-border-color: #85ADA7;
-        --bs-btn-active-bg: #85ADA7;
-        --bs-btn-active-border-color: #85ADA7;
-        --bs-btn-disabled-bg: #679992;
-        --bs-btn-disabled-border-color: #679992;
+        background-color: #679992;
+        border-color: #679992;
+
+        &:hover {
+            background-color: #679992;
+            border-color: #85ADA7;
+        }
+
+        &:active {
+            background-color: #85ADA7;
+            border-color: #85ADA7;
+        }
+
+        &:disabled {
+            background-color: #679992;
+            border-color: #679992;
+        }
     }
 
     &.btn-info {
-        --bs-btn-bg: #E3C1C2;
-        --bs-btn-border-color: #E3C1C2;
-        --bs-btn-hover-bg: #EAD1D2;
-        --bs-btn-hover-border-color: #EAD1D2;
-        --bs-btn-active-bg: #EAD1D2;
-        --bs-btn-active-border-color: #EAD1D2;
-        --bs-btn-disabled-bg: #E3C1C2;
-        --bs-btn-disabled-border-color: #E3C1C2;
+        background-color: #E3C1C2;
+        border-color: #E3C1C2;
+
+        &:hover {
+            background-color: #EAD1D2;
+            border-color: #EAD1D2;
+        }
+
+        &:active {
+            background-color: #EAD1D2;
+            border-color: #EAD1D2;
+        }
+
+        &:disabled {
+            background-color: #E3C1C2;
+            border-color: #E3C1C2;
+        }
     }
 
     &.btn-lg {
-        --bs-btn-padding-y: 0.75rem;
-        --bs-btn-padding-x: 1.5rem;
-        --bs-btn-font-size: 1.125rem;
-        --bs-btn-border-radius: 0;
+        font-size: 1.125rem;
+        border-radius: 0;
+        padding: 0.75rem 1.5rem;
     }
 
     &.btn-md {
-        --bs-btn-padding-y: 0.75rem;
-        --bs-btn-padding-x: 1.5rem;
-        --bs-btn-font-size: 1rem;
-        --bs-btn-border-radius: 0;
+        font-size: 1rem;
+        border-radius: 0;
+        padding: 0.75rem 1.5rem;
     }
 
     &.btn-sm {
-        --bs-btn-padding-y: 0.75rem;
-        --bs-btn-padding-x: 1.5rem;
-        --bs-btn-font-size: 1rem;
-        --bs-btn-border-radius: 0;
+        font-size: 1rem;
+        border-radius: 0;
+        padding: 0.75rem 1.5rem;
     }
 
     @include respond-to(mobile) {
         &.btn-lg {
-            --bs-btn-font-size: 1rem;
+            font-size: 1rem;
         }
     }
 
     @include respond-to(phone-xs) {
-        width: 100%;
+        width: 100% !important;
     }
 }
 
@@ -116,6 +141,10 @@
     &.no-border {
         border: 1px solid #FFF;
     }
+}
+
+.form-control-select {
+    padding-right: 30px;
 }
 
 .col-xs, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12,

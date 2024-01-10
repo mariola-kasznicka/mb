@@ -48,19 +48,30 @@ p { font-size: 1rem; }
 .dropdown-toggle::after { width: 12px; height: 12px; display: inline-block; margin-left: 0.255em; vertical-align: baseline; border: 0; background-image: url("../../assets/icons/chevron-down.svg"); background-repeat: no-repeat; background-size: cover; background-position: center center; }
 .dropdown-toggle.show::after { background-image: url("../../assets/icons/chevron-up.svg"); }
 
-.btn { font-family: "Baskerville", serif; font-style: normal; font-weight: 400; line-height: 170%; letter-spacing: 0.54px; text-transform: uppercase; border-radius: 0; }
+.btn { width: auto !important; font-family: "Baskerville", serif; font-style: normal; font-weight: 400; line-height: 170%; letter-spacing: 0.54px; text-transform: uppercase; border-radius: 0; }
 .btn:hover, .btn:active, .btn:focus { text-decoration: none; }
-.btn.btn-primary { --bs-btn-bg: #3E6749; --bs-btn-border-color: #3E6749; --bs-btn-hover-bg: #50865F; --bs-btn-hover-border-color: #50865F; --bs-btn-active-bg: #50865F; --bs-btn-active-border-color: #50865F; --bs-btn-disabled-bg: #3E6749; --bs-btn-disabled-border-color: #3E6749; }
-.btn.btn-secondary { --bs-btn-bg: #679992; --bs-btn-border-color: #679992; --bs-btn-hover-bg: #85ADA7; --bs-btn-hover-border-color: #85ADA7; --bs-btn-active-bg: #85ADA7; --bs-btn-active-border-color: #85ADA7; --bs-btn-disabled-bg: #679992; --bs-btn-disabled-border-color: #679992; }
-.btn.btn-info { --bs-btn-bg: #E3C1C2; --bs-btn-border-color: #E3C1C2; --bs-btn-hover-bg: #EAD1D2; --bs-btn-hover-border-color: #EAD1D2; --bs-btn-active-bg: #EAD1D2; --bs-btn-active-border-color: #EAD1D2; --bs-btn-disabled-bg: #E3C1C2; --bs-btn-disabled-border-color: #E3C1C2; }
-.btn.btn-lg { --bs-btn-padding-y: 0.75rem; --bs-btn-padding-x: 1.5rem; --bs-btn-font-size: 1.125rem; --bs-btn-border-radius: 0; }
-.btn.btn-md { --bs-btn-padding-y: 0.75rem; --bs-btn-padding-x: 1.5rem; --bs-btn-font-size: 1rem; --bs-btn-border-radius: 0; }
-.btn.btn-sm { --bs-btn-padding-y: 0.75rem; --bs-btn-padding-x: 1.5rem; --bs-btn-font-size: 1rem; --bs-btn-border-radius: 0; }
-@media (max-width: 1279px) { .btn.btn-lg { --bs-btn-font-size: 1rem; } }
-@media (max-width: 709px) { .btn { width: 100%; } }
+.btn.btn-primary { background-color: #3E6749; border-color: #3E6749; }
+.btn.btn-primary:hover { background-color: #50865F; border-color: #50865F; }
+.btn.btn-primary:active { background-color: #50865F; border-color: #3E6749; }
+.btn.btn-primary:disabled { background-color: #3E6749; border-color: #3E6749; }
+.btn.btn-secondary { background-color: #679992; border-color: #679992; }
+.btn.btn-secondary:hover { background-color: #679992; border-color: #85ADA7; }
+.btn.btn-secondary:active { background-color: #85ADA7; border-color: #85ADA7; }
+.btn.btn-secondary:disabled { background-color: #679992; border-color: #679992; }
+.btn.btn-info { background-color: #E3C1C2; border-color: #E3C1C2; }
+.btn.btn-info:hover { background-color: #EAD1D2; border-color: #EAD1D2; }
+.btn.btn-info:active { background-color: #EAD1D2; border-color: #EAD1D2; }
+.btn.btn-info:disabled { background-color: #E3C1C2; border-color: #E3C1C2; }
+.btn.btn-lg { font-size: 1.125rem; border-radius: 0; padding: 0.75rem 1.5rem; }
+.btn.btn-md { font-size: 1rem; border-radius: 0; padding: 0.75rem 1.5rem; }
+.btn.btn-sm { font-size: 1rem; border-radius: 0; padding: 0.75rem 1.5rem; }
+@media (max-width: 1279px) { .btn.btn-lg { font-size: 1rem; } }
+@media (max-width: 709px) { .btn { width: 100% !important; } }
 
 .form-control { border-radius: 0; padding: 16px; height: 60px; }
 .form-control.no-border { border: 1px solid #FFF; }
+
+.form-control-select { padding-right: 30px; }
 
 .col-xs, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-xl, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12 { padding-left: 0; padding-right: 0; }
 
@@ -95,6 +106,7 @@ p { font-size: 1rem; }
 .section-heading { padding-top: 100px; padding-bottom: 64px; }
 .section-heading .section-heading-header { color: #635F5F; font-size: 14px; font-weight: 500; letter-spacing: 0.42px; text-transform: uppercase; }
 .section-heading .section-heading-title { font-size: 3.5rem; }
+.section-heading .row { margin: 0; }
 @media (max-width: 1279px) { .section-heading { padding-top: 64px; padding-bottom: 40px; }
   .section-heading .section-heading-title { font-size: 2.5rem; } }
 @media (max-width: 767px) { .section-heading { padding-top: 48px; }

@@ -147,6 +147,10 @@
         font-size: 3.5rem;
     }
 
+    .row {
+        margin: 0;
+    }
+
     @include respond-to(mobile) {
         padding-top: 64px;
         padding-bottom: 40px;
