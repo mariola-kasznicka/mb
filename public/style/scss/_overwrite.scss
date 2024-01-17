@@ -30,6 +30,16 @@
     }
 }
 
+.dropdown-menu {
+    border-radius: 0;
+    border-color: $border-color;
+
+    .dropdown-item {
+        font-size: 14px;
+        color: #827D7D;
+    }
+}
+
 .btn {
     width: auto !important;
     font-family: $secondary-font;
