@@ -193,3 +193,40 @@ nav.navbar {
   }
 }
 
+#header {
+  .search-toggle {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: $page-body-color;
+    left: 0;
+    right: 0;
+    border-top: 1px solid $border-color;
+    padding: 20px 0;
+
+    .form-control {
+      border-color: $page-body-color;
+      padding-left: 40px;
+    }
+
+    .container {
+      position: relative;
+    }
+
+    .search-toggle-icon {
+      position: absolute;
+      left: 5px;
+      top: 18px;
+    }
+
+    .btn-close {
+      position: absolute;
+      right: 5px;
+      top: 18px;
+    }
+
+    @include respond-to(mobile) {
+      padding: 0;
+    }
+  }
+}
