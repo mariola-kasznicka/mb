@@ -230,3 +230,17 @@ nav.navbar {
     }
   }
 }
+
+#header ul.dropdown-menu {
+  padding: 10px 0;
+  border: 1px solid $border-color;
+
+  .dropdown-item {
+    padding: 6px 24px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+}
