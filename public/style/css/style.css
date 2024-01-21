@@ -42,6 +42,10 @@ p { font-size: 1rem; }
 @media (max-width: 767px) { .visible-phone { display: block; }
   .visible-phone.flex { display: flex; } }
 
+.fade.show { opacity: 1; }
+
+.modal-backdrop.fade.show { opacity: 0.5; }
+
 .container { width: 95%; max-width: 1440px; margin: 0 auto; padding: 0; }
 @media (max-width: 1279px) { .container { width: calc(100% - 32px); max-width: calc(100% - 32px); margin: 0 16px; } }
 
@@ -71,10 +75,30 @@ p { font-size: 1rem; }
 @media (max-width: 1279px) { .btn.btn-lg { font-size: 1rem; } }
 @media (max-width: 709px) { .btn { width: 100% !important; } }
 
+.form-group { align-items: center; }
+
 .form-control { border-radius: 0; padding: 16px; height: 60px; }
 .form-control.no-border { border: 1px solid #FFF; }
 
-.form-control-select { padding-right: 30px; }
+.form-control-select, select.form-control:not([size]):not([multiple]) { padding-right: 30px; height: 60px; }
+
+.flexslider { width: 100%; max-width: 1600px; margin: 0 auto; }
+.flexslider .caption-description > .container { position: static; }
+.flexslider .slides .slide { aspect-ratio: 72 / 30; }
+.flexslider .slides .slide > a { width: 100%; height: 100%; position: relative; }
+.flexslider .slides .slide > a img { position: absolute; left: 0; right: 0; top: 0; bottom: 0; height: 100%; width: auto; max-width: none; }
+.flexslider .slides .slide .slide_content { bottom: 0; top: 0; left: 5%; height: 100%; display: flex; align-items: center; }
+.flexslider .flex-control-nav { bottom: 40px; }
+.flexslider .flex-control-nav li { margin: 0 6px; }
+.flexslider .flex-control-nav li a { width: 16px; height: 16px; opacity: 0.6; }
+.flexslider .flex-control-nav li a.flex-active { opacity: 1; border-color: #FFF; background-color: #FFF; }
+@media (max-width: 1279px) { .flexslider .slides .slide { aspect-ratio: 32 / 25; }
+  .flexslider .slides .slide > a > img { left: auto; right: -50%; }
+  .flexslider .slides .slide .slide_content { width: 75% !important; }
+  .flexslider .slides .slide .slide_content .headdings .sub_title { font-size: 3.5rem; } }
+@media (max-width: 709px) { .flexslider .slides .slide { aspect-ratio: 3 / 4; }
+  .flexslider .slides .slide .slide_content { width: 90% !important; }
+  .flexslider .slides .slide .slide_content button { width: 100% !important; } }
 
 .banner { width: 100%; max-width: 1600px; margin: 0 auto; background-position: top right; background-repeat: no-repeat; background-size: cover; aspect-ratio: 72 / 30; }
 .banner.banner-home { background-image: url("../../assets/banner/banner-1.jpg"); }
@@ -210,12 +234,12 @@ nav.navbar .navbar-toggler:focus { box-shadow: none; }
   nav.navbar .logo { width: 128px; }
   nav.navbar .navbar-collapse { height: calc(100vh - 80px); top: 80px; padding: 16px; } }
 
-#header .search-toggle { position: absolute; top: 100%; background-color: #FFFFFF; left: 0; right: 0; border-top: 1px solid #CDCBCB; border-bottom: 1px solid #CDCBCB; padding: 20px 0; }
-#header .search-toggle .form-control { border-color: #FFFFFF; padding-left: 40px; }
-#header .search-toggle .container { position: relative; }
-#header .search-toggle .search-toggle-icon { position: absolute; left: 5px; top: 18px; }
-#header .search-toggle .btn-close { position: absolute; right: 5px; top: 18px; }
-@media (max-width: 1279px) { #header .search-toggle { padding: 0; } }
+#header .search-widget .search_toggle { position: fixed; background-color: #FFFFFF; z-index: 9; width: 100%; top: 138px; left: 0; right: 0; border-top: 1px solid #CDCBCB; border-bottom: 1px solid #CDCBCB; padding: 20px 0; }
+#header .search-widget .search_toggle form { width: 95%; max-width: 1440px; margin: 0 auto; padding: 0; border: 0; position: relative; }
+#header .search-widget .search_toggle .ui-autocomplete-input { border-radius: 0; padding: 16px; padding-left: 40px; border-color: #FFFFFF; width: 100%; }
+#header .search-widget .search_toggle .search-toggle-icon { position: absolute; left: 5px; top: 18px; }
+#header .search-widget .search_toggle button, #header .search-widget .search_toggle .btn-close { position: absolute; right: 5px; top: 18px; }
+@media (max-width: 1279px) { #header .search-widget .search_toggle { padding: 0; } }
 
 #header ul.dropdown-menu { padding: 10px 0; border: 1px solid #CDCBCB; }
 #header ul.dropdown-menu .dropdown-item { padding: 6px 24px; }

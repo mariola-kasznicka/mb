@@ -67,6 +67,16 @@
                 <img src="public/assets/icons/search.svg" alt="Szukaj">
                 <span>Szukaj</span>
             </a>
+            <div id="search_widget" class="col-lg-4 col-md-5 col-sm-12 search-widget" data-search-controller-url="//dev.mbbijoux.pl/szukaj">
+                <div class="search_toggle" style="display: block;">
+                    <form method="get" action="//dev.mbbijoux.pl/szukaj">
+                        <img src="public/assets/icons/search.svg" class="search-toggle-icon" alt="Szukaj">
+                        <input type="hidden" name="controller" value="search">
+                        <input type="text" name="s" value="" placeholder="Szukaj tutaj" class="ui-autocomplete-input" autocomplete="off">
+                        <button type="submit"></button>
+                    </form>
+                </div>
+            </div>
             <a class="nav-link navbar-icon" href="#">
                 <img src="public/assets/icons/account.svg" alt="Konto">
                 <span>Konto</span>
@@ -75,58 +85,6 @@
                 <img src="public/assets/icons/basket.svg" alt="Koszyk">
                 <span>Koszyk</span>
             </a>
-        </div>
-    </div>
-    <div class="search-toggle">
-        <div class="container">
-            <img src="public/assets/icons/search.svg" class="search-toggle-icon" alt="Szukaj">
-            <input type="text" placeholder="Szukaj" class="form-control">
-            <button type="button" class="btn-close" aria-label="Close"></button>
-        </div>
-        <div class="container">
-            <div class="products">
-                <div class="products-inner">
-                    <a href="#" class="card">
-                        <div class="card-img">
-                            <img src="public/assets/product.jpg" class="card-img-top" alt="">
-                        </div>
-                        <div class="card-body">
-                            <h6 class="card-title">Kolczyki z Kamieniami Kolczyki z Kamieniami</h6>
-                            <p class="card-text">160zł</p>
-                        </div>
-                    </a>
-                    <a href="#" class="card">
-                        <div class="card-img">
-                            <img src="public/assets/product_2.png" class="card-img-top" alt="">
-                        </div>
-                        <div class="card-body">
-                            <h6 class="card-title">Kolczyki z Kamieniami</h6>
-                            <p class="card-text">160zł</p>
-                        </div>
-                    </a>
-                    <a href="#" class="card">
-                        <div class="card-img">
-                            <img src="public/assets/product_3.png" class="card-img-top" alt="">
-                        </div>
-                        <div class="card-body">
-                            <h6 class="card-title">Kolczyki z Kamieniami</h6>
-                            <p class="card-text">160zł</p>
-                        </div>
-                    </a>
-                    <a href="#" class="card">
-                        <div class="card-img">
-                            <img src="public/assets/product.jpg" class="card-img-top" alt="">
-                        </div>
-                        <div class="card-body">
-                            <h6 class="card-title">Kolczyki z Kamieniami</h6>
-                            <p class="card-text">160zł</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="text-center">
-                <a href="#" class="btn btn-lg btn-primary">Zobacz wszystkie</a>
-            </div>
         </div>
     </div>
 </nav>
