@@ -107,7 +107,13 @@ nav.navbar {
   @media (max-width: 1199px) {
     padding: 26px 0;
 
+    > .container > div {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
     .navbar-icon {
+      margin-left: 10px;
       > span {
         display: none;
       }
